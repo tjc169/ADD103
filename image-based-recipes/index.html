@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100..900&family=Noto+Sans:ital,wght@0,100..900&display=swap"
+        rel="stylesheet" />
+
+    <title>Meals Made Easy</title>
+    <link rel="stylesheet" href="css/index-styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html">
+                <img src="images/meals-made-easy-pan.png" alt="pan" class="logo">
+            </a>
+            <img src="images/meals-made-easy-banner.png" alt="banner" class="banner">
+        </div>
+
+    <!-- Main Content -->
+    <main class="content">
+        <h1>Good meals made fast</h1>
+<!-- Downloaded from https://pixabay.com/ -->
+        <img src="images/index/index-image-1.jpg" alt="plates on table" />
+
+        <p>
+            Welcome to our recipe website made just for busy people like you! We know life can get really hectic.
+            Whether you're a parent trying to feed your kids after a long day or a working professional who just got
+            home from the office, the last thing you want to do is spend hours in the kitchen. That’s where we come in.
+            Our goal is to help you make fast, simple, and tasty meals without all the stress. You don’t need to be a
+            chef, and you don’t need a ton of time. With our recipes, you can have dinner ready in no time.
+        </p>
+<!-- Downloaded from https://pixabay.com/ -->
+
+        <img src="images/index/index-image-2.jpg" alt="cooking dinner" />
+
+        <p>
+            We believe that just because you’re short on time doesn’t mean you should settle for takeout or frozen meals
+            every night. Our recipes use everyday ingredients you probably already have at home. Many of them take 30
+            minutes or less to make. Some are even ready in 15 minutes! From quick pastas and easy stir-fries to one-pan
+            dinners and no-cook lunches, there’s something here for everyone. We also include tips to help you save time
+            while cooking, like how to prep ingredients ahead or how to cook smarter with fewer dishes.
+        </p>
+<!-- Downloaded from https://pixabay.com/ -->
+
+        <img src="images/index/index-image-3.jpg" alt="more plates on table" />
+
+        <p>
+            This website is all about helping you spend less time cooking and more time enjoying your meal — whether
+            that’s with your family, your friends, or just by yourself after a long day. So take a look around, try out
+            a few recipes, and see how easy and delicious home-cooked meals can be!
+        </p>
+
+<div class="grid-box">
+            <h2>Click on an image</h2>
+
+    <!-- Recipe Image Grid -->
+    <!-- Used ChatGPT to assist with the more advanced java to get it the way I wanted it -->
+    <div class="grid-container">
+        
+        <div onclick="updateInfo(
+      'A cheesy, comforting casserole perfect for weeknights.',
+      'cheeseburger-casserole.html',
+      'Cheeseburger Casserole')">
+            <img src="images/cheeseburger-casserole/Cheeseburger-Casserole-1.jpg" alt="cheeseburger casserole" />
+        </div>
+
+        <div onclick="updateInfo(
+      'A healthy, low-carb dinner packed with flavor.',
+      'egg-roll-in-a-bowl.html',
+      'Egg Roll in a Bowl')">
+            <img src="images/egg-roll-in-a-bowl/egg-roll-in-a-bowl-1.jpg" alt="egg roll in a bowl" />
+        </div>
+
+        <div onclick="updateInfo(
+      'Tender, savory meatballs for any occasion.',
+      'meatballs.html',
+      'Savory Meatballs')">
+            <img src="images/meatballs/meatballs-1.jpg" alt="meatballs" />
+        </div>
+    </div>
+
+    <!-- Text & Link Below Grid -->
+    <div class="main-display">
+        <a id="main-link" href="#" target="_blank" class="fade hidden">Meal Name</a>
+        <p id="description" class="fade hidden">Meal description goes here.</p>
+    </div>
+</div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Meals Made Easy</p>
+        <a href="contact.html">Contact Us</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
